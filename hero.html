@@ -79,24 +79,130 @@
 <!--https://superheroapi.com/api/846111109131247-->
 <script>
     var data = null;
-
+    let as;
 var xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
 
 xhr.addEventListener("readystatechange", function () {
 	if (this.readyState === this.DONE) {
 		console.log(this.responseText);
+        
+        document.getElementById("name").innerHTML =(JSON.parse(this.responseText)).name;
+        // document.getElementById("namedata").innerHTML =(JSON.parse(this.responseText));
 	}
 });
 
-xhr.open("GET", "https://superheroapi.com/api/846111109131247/12/");
+xhr.open("GET", "https://superhero-search.p.rapidapi.com/?id=1");
 xhr.setRequestHeader("x-rapidapi-host", "superhero-search.p.rapidapi.com");
 xhr.setRequestHeader("x-rapidapi-key", "8a782331cfmsh2c9c14dedcc714dp13034ajsndc43b559d46c");
-
 xhr.send(data);
+
 </script>
 <section class="py-7 bg-dark section-angle top-right bottom-right" id="card">
-
+    <section class="stacked-cards">
+        <div class="card-grid">
+          <div class="childs">
+            <article class="child">
+              <h2 id="name"><a href="#"></a></h2>
+              <img src="https://lh3.googleusercontent.com/4oABLB2KfrMWEyk6pYXp6Nv580pqvSvd2LLNkgFnUJ6ejFfLp7q9I4MtuZ_C80w2Xw=w300" />
+              <p id="namedata"></p>
+              <div class="buttons">
+                
+                <button class="button detail">Подробнее</button>
+              </div>
+            </article>
+            <article class="child">
+              <h2><a href="#">Lorem ipsum dolor sit amet</a></h2> 
+              <img src="https://lh3.googleusercontent.com/4oABLB2KfrMWEyk6pYXp6Nv580pqvSvd2LLNkgFnUJ6ejFfLp7q9I4MtuZ_C80w2Xw=w300" />
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="buttons">
+                
+                <button class="button detail">Подробнее</button>
+              </div>
+            </article>
+            <article class="child">
+              <h2><a href="#">Lorem</a></h2>
+              <img src="https://lh3.googleusercontent.com/4oABLB2KfrMWEyk6pYXp6Nv580pqvSvd2LLNkgFnUJ6ejFfLp7q9I4MtuZ_C80w2Xw=w300" />
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptas adipisci voluptates, ex minima dignissimos praesentium eligendi possimus sapiente enim autem tempore.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel vero non enim placeat dolorem iste repellendus est sequi, exercitationem velit? </p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel vero non enim placeat dolorem iste repellendus est sequi, exercitationem velit? </p>
+              <div class="buttons">
+                
+                <button class="button detail">Подробнее</button>
+              </div>
+            </article>
+            <article class="child">
+              <h2><a href="#">Lorem ipsum dolor sit amet consectetur</a></h2>
+              <img src="https://lh3.googleusercontent.com/4oABLB2KfrMWEyk6pYXp6Nv580pqvSvd2LLNkgFnUJ6ejFfLp7q9I4MtuZ_C80w2Xw=w300" />
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptas adipisci voluptates, ex minima dignissimos praesentium eligendi possimus sapiente enim autem tempore. Eveniet, perferendis nesciunt tenetur deserunt animi odio repellat.</p>
+              <div class="buttons">
+                
+                <button class="button detail">Подробнее</button>
+              </div>
+            </article>
+            <article class="child">
+              <h2><a href="#">Title</a></h2>
+              <img src="https://lh3.googleusercontent.com/4oABLB2KfrMWEyk6pYXp6Nv580pqvSvd2LLNkgFnUJ6ejFfLp7q9I4MtuZ_C80w2Xw=w300" />
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, perferendis nesciunt tenetur deserunt animi odio repellat.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel vero non enim placeat dolorem iste repellendus est sequi, exercitationem velit? </p>
+              <div class="buttons">
+                
+                <button class="button detail">Подробнее</button>
+              </div>
+            </article>
+            <article class="child">
+              <h2><a href="#">Title</a></h2>
+              <img src="https://lh3.googleusercontent.com/4oABLB2KfrMWEyk6pYXp6Nv580pqvSvd2LLNkgFnUJ6ejFfLp7q9I4MtuZ_C80w2Xw=w300" />
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, perferendis nesciunt tenetur deserunt animi odio repellat.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel vero non enim placeat dolorem iste repellendus est sequi, exercitationem velit? </p>
+              <div class="buttons">
+                
+                <button class="button detail">Подробнее</button>
+              </div>
+            </article>
+            <article class="child">
+              <h2><a href="#">Title</a></h2>
+              <img src="https://lh3.googleusercontent.com/4oABLB2KfrMWEyk6pYXp6Nv580pqvSvd2LLNkgFnUJ6ejFfLp7q9I4MtuZ_C80w2Xw=w300" />
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, perferendis nesciunt tenetur deserunt animi odio repellat.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel vero non enim placeat dolorem iste repellendus est sequi, exercitationem velit? </p>
+              <div class="buttons">
+                
+                <button class="button detail">Подробнее</button>
+              </div>
+            </article>
+            <article class="child">
+              <h2><a href="#">Title</a></h2>
+              <img src="https://lh3.googleusercontent.com/4oABLB2KfrMWEyk6pYXp6Nv580pqvSvd2LLNkgFnUJ6ejFfLp7q9I4MtuZ_C80w2Xw=w300" />
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, perferendis nesciunt tenetur deserunt animi odio repellat.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel vero non enim placeat dolorem iste repellendus est sequi, exercitationem velit? </p>
+              <div class="buttons">
+                
+                <button class="button detail">Подробнее</button>
+              </div>
+            </article>
+            <article class="child">
+              <h2><a href="#">Title</a></h2>
+              <img src="https://lh3.googleusercontent.com/4oABLB2KfrMWEyk6pYXp6Nv580pqvSvd2LLNkgFnUJ6ejFfLp7q9I4MtuZ_C80w2Xw=w300" />
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, perferendis nesciunt tenetur deserunt animi odio repellat.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel vero non enim placeat dolorem iste repellendus est sequi, exercitationem velit? </p>
+              <div class="buttons">
+                
+                <button class="button detail">Подробнее</button>
+              </div>
+            </article>
+            <article class="child">
+              <h2><a href="#">Title</a></h2>
+              <img src="https://lh3.googleusercontent.com/4oABLB2KfrMWEyk6pYXp6Nv580pqvSvd2LLNkgFnUJ6ejFfLp7q9I4MtuZ_C80w2Xw=w300" />
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, perferendis nesciunt tenetur deserunt animi odio repellat.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel vero non enim placeat dolorem iste repellendus est sequi, exercitationem velit? </p>
+              <div class="buttons">
+                
+                <button class="button detail">Подробнее</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 </section>
 
 
